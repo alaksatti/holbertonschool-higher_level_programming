@@ -1,0 +1,62 @@
+The ``1-my_list`` module
+=========================
+
+Using ``MyList``
+
+>>> MyList = __import__('1-my_list').MyList
+
+>>> mylist = MyList()
+
+>>> print(mylist)
+[]
+
+>>> mylist.print_sorted()
+[]
+
+>>> mylist.append(10)
+
+>>> print(mylist)
+[10]
+
+>>> mylist.print_sorted()
+[10]
+
+>>> mylist.append(6)
+
+>>> print(mylist)
+[10, 6]
+
+>>> mylist.print_sorted()
+[6, 10]
+
+>>> mylist.append(6)
+
+>>> print(mylist)
+[10, 6, 6]
+
+>>> mylist.print_sorted()
+[6, 6, 10]
+
+>>> mylist.append(-2019)
+
+>>> print(mylist)
+[10, 6, 6, -2019]
+
+>>> mylist.print_sorted()
+[-2019, 6, 6, 10]
+
+>>> ex = MyList('hello', 'girl')
+Traceback (most recent call last):
+TypeError: list() takes at most 1 argument (2 given)
+
+>>> ex = MyList(6)
+Traceback (most recent call last):
+TypeError: 'int' object is not iterable
+
+>>> ex = MyList(6.7)
+Traceback (most recent call last):
+TypeError: 'float' object is not iterable
+
+>>> ex = MyList(False)
+Traceback (most recent call last):
+TypeError: 'bool' object is not iterable

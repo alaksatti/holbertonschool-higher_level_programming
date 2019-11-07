@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+
+"""
+Class: Rectangle.
+Empty class.
+
+"""
+
+
+class Rectangle:
+    """
+    Empty class
+    """
+    pass

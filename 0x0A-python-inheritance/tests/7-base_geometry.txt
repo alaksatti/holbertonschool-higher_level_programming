@@ -1,0 +1,58 @@
+The ``7-base_geometry`` module
+=========================
+
+Using ``BaseGeometry``
+
+>>> Base_Geometry = __import__('7-base_geometry').BaseGeometry
+
+>>> bg = Base_Geometry()
+
+>>> bg.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
+
+>>> bg.integer_validator("QueenB", "toocool")
+Traceback (most recent call last):
+TypeError: QueenB must be an integer
+
+>>> bg.integer_validator("QueenB", -1)
+Traceback (most recent call last):
+ValueError: QueenB must be greater than 0
+
+>>> bg.integer_validator("QueenB", 0)
+Traceback (most recent call last):
+ValueError: QueenB must be greater than 0
+
+>>> bg.integer_validator("QueenB", "a")
+Traceback (most recent call last):
+TypeError: QueenB must be an integer
+
+>>> bg.integer_validator("QueenB", None)
+Traceback (most recent call last):
+TypeError: QueenB must be an integer
+
+>>> bg.integer_validator("QueenB")
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+>>> bg.integer_validator("QueenB", [5])
+Traceback (most recent call last):
+TypeError: QueenB must be an integer
+
+>>> bg.integer_validator("QueenB", 4.5)
+Traceback (most recent call last):
+TypeError: QueenB must be an integer
+
+>>> bg.integer_validator("QueenB", True)
+Traceback (most recent call last):
+TypeError: QueenB must be an integer
+
+>>> bg.integer_validator("QueenB", {3, 4})
+Traceback (most recent call last):
+TypeError: QueenB must be an integer
+
+>>> bg.integer_validator("QueenB", (4,))
+Traceback (most recent call last):
+TypeError: QueenB must be an integer
+
+>>> bg.integer_validator("QueenB", 1)

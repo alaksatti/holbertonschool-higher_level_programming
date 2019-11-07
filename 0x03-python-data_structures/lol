@@ -1,0 +1,110 @@
+#include "lists.h"
+#include <stdio.h>
+
+/**
+ * is_palindrome checks if a singly linked list is a palindrome or not.
+ * @head: pointer to beginning of linked lists.
+ * Returns: 0 if not, 1 if is a palindrome.
+ */
+
+int is_palindrome(listint_t **head)
+{
+
+	unsigned long int actualnum = 0, reverse = 0, num;
+
+	if (!head)
+		return (0);
+
+	if (!*head || !(*head)->next)
+		return (1);
+
+	while (*head)
+	{
+		num = (*head)->n;
+		actualnum = saver(num, actualnum);
+		reverse = rsaver(num, reverse);
+		*head = (*head)->next;
+	}
+
+
+	return (1);
+/**
+	temp = actualnum;
+
+	while (temp > 0)
+	{
+		remainder = temp % 10;
+                reverse = reverse * 10 + remainder;
+		temp /=  10;
+	}
+
+**/
+
+	printf("actual: %lu\treversed: %lu", actualnum, reverse);
+
+	if (actualnum != reverse)
+		return (0);
+
+	return (1);
+}
+
+
+
+unsigned long int saver(int num, unsigned long int actualnum)
+{
+	unsigned long int mid, remainder;
+
+
+	if (num > 10 && num < 100)
+	{
+		actualnum = actualnum * 10 + (num / 10);
+		actualnum = actualnum * 10 + (num % 10);
+	}
+	else if (num >= 100)
+	{
+		actualnum = actualnum * 10 + (num / 100);
+		mid = num / 10;
+		actualnum = actualnum * 10 + (mid % 10);
+		actualnum = actualnum * 10 + (num % 10);
+	}
+	else
+	{
+		remainder = num;
+		actualnum = actualnum * 10 + remainder;
+	}
+
+
+	return (actualnum);
+
+
+}
+
+
+unsigned long int rsaver(int num, unsigned long int actualnum)
+{
+        unsigned long int mid, remainder;
+
+
+        if (num > 10 && num < 100)
+        {
+                actualnum = actualnum * 10 + (num % 10);
+		actualnum = actualnum * 10 + (num / 10);
+        }
+        else if (num >= 100)
+        {
+		actualnum = actualnum * 10 + (num % 10);
+                mid = num / 10;
+                actualnum = actualnum * 10 + (mid % 10);
+		actualnum = actualnum * 10 + (num / 100);
+        }
+        else
+        {
+                remainder = num;
+                actualnum = actualnum * 10 + remainder;
+        }
+
+
+        return (actualnum);
+
+
+}

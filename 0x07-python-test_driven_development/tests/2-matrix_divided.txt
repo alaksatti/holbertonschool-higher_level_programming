@@ -1,0 +1,89 @@
+The ``2-matrix_divided`` module
+============================
+
+Using ``matrix_divided``
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> matrix = [
+... [2, 4],
+... [6, 8]]
+>>> matrix_divided(matrix, 2)
+[[1.0, 2.0], [3.0, 4.0]]
+
+>>> matrix = [
+... [2, 4],
+... [6, 8]]
+>>> matrix_divided(matrix, 1.5)
+[[1.33, 2.67], [4.0, 5.33]]
+
+>>> matrix = [
+... [2, 4],
+... [6, 8]]
+>>> matrix_divided(matrix, float('inf'))
+[[0.0, 0.0], [0.0, 0.0]]
+
+>>> matrix = [
+... [2, 4],
+... [6, 8]]
+>>> matrix_divided(matrix, None)
+Traceback (most recent call last):
+TypeError: div must be a number
+
+
+>>> matrix = [
+... [2, 4],
+... [6, 8]]
+>>> matrix_divided(None, 2)
+Traceback (most recent call last):
+TypeError: 'NoneType' object is not iterable
+
+
+
+>>> matrix = [
+... [2, 4],
+... [6, 8]]
+>>> matrix_divided(None, None)
+Traceback (most recent call last):
+TypeError: 'NoneType' object is not iterable
+
+>>> matrix = [
+... [2, 4],
+... [6, 8]]
+>>> matrix_divided()
+Traceback (most recent call last):
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+
+>>> matrix = [
+... [2, 4],
+... [6, 8]]
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
+
+>>> matrix = [
+... [2, 4],
+... [6, 8]]
+>>> matrix_divided(matrix, "hi")
+Traceback (most recent call last):
+TypeError: div must be a number
+
+>>> matrix = [
+... (1, 4, 3),
+... [4, 4, 4]]
+>>> matrix_divided(matrix, 1)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix = [
+... [2, 2, 2, 2],
+... [1, 1]]
+>>> matrix_divided(matrix, 1)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+
+>>> matrix = []
+>>> matrix_divided(matrix, 1)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
