@@ -17,6 +17,5 @@ if __name__ == "__main__":
                 "AS a JOIN states AS states ON cities.state_id = states.id"
                 "WHERE states.name = %s ORDER BY cities.id", (argv[4],))
     rows = cur.fetchall()
-    for row in rows:
-        print(", ".join(row[0]))
+    print(", ".join([row[0] for row in rows]))
     db.close()
