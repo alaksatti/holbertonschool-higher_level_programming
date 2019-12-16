@@ -13,9 +13,10 @@ if __name__ == "__main__":
                          passwd=argv[2],
                          db=argv[3])
     cur = db.cursor()
-    cur.execute("SELECT cities.name FROM cities"
-                "AS a JOIN states AS states ON cities.state_id = states.id"
-                "WHERE states.name = %s ORDER BY cities.id", (argv[4],))
+    cur.execute("SELECT cities.name FROM cities "
+                "AS a JOIN states AS states ON "
+                "cities.state_id = states.id WHERE states.name = %s ORDER BY states.id",
+                (argv[4],))
     rows = cur.fetchall()
     print(", ".join([row[0] for row in rows]))
     db.close()
