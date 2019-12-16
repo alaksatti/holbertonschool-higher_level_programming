@@ -2,7 +2,7 @@
 '''
 links cities class to database
 '''
- 
+
 if __name__ == "__main__":
     from sys import argv
     from relationship_state import Base, State
@@ -17,8 +17,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     session = sessionmaker(bind=engine)()
     sf_city = City(name='San Francisco')
-    state = State(name='California', cities=[sf_city])
-    session.add(state)
+    session.add(State(name='California', cities=[sf_city]))
     session.add(sf_city)
     session.commit()
     session.close()
