@@ -17,7 +17,7 @@ if __name__ == "__main__":
     lists = session.query(State).all()
 
     if state in lists:
-        if 'a' in str(state):
+        if 'a' in state.name:
             print("{}: {}".format(state.id, state.name))
 
     session.close()
