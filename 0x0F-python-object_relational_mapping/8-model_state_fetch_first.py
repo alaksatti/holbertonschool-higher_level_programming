@@ -9,16 +9,16 @@ if __name__ == "__main__":
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
 
-
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.
         format(argv[1], argv[2], argv[3]),
         pool_pre_ping=True)
 
-
     session = sessionmaker(bind=engine)()
     lists = session.query(State).first()
 
-    for state in lists:
+    if lists is None:
+        print("Nothing")
+    else:
       print("{}: {}".format(state.id, state.name))
     session.close()
 
