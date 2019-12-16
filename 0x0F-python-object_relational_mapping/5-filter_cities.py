@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-lists states cities from holberton database
+lists cities from a state taken as an argument"
 '''
 
 if __name__ == "__main__":
@@ -13,8 +13,9 @@ if __name__ == "__main__":
                          passwd=argv[2],
                          db=argv[3])
     cur = db.cursor()
-    cur.execute("SELECT cities.id, cities.name, states.name FROM cities"
-                "AS a JOIN states AS states ON cities.state_id = states.id")
+    cur.execute("SELECT cities.name FROM cities"
+                "AS a JOIN states AS states ON cities.state_id = states.id"
+                "WHERE states.name = {}".format(argv[4]))
     rows = cur.fetchall()
     for row in rows:
         print("{}".format(row))
