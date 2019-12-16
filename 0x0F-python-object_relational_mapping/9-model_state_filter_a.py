@@ -16,7 +16,7 @@ if __name__ == "__main__":
     session = sessionmaker(bind=engine)()
     lists = session.query(State).all()
 
-    if state in lists:
+    for state in lists:
         if 'a' in state.name:
             print("{}: {}".format(state.id, state.name))
 
