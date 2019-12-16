@@ -3,16 +3,16 @@
 contains the class definition of city
 '''
 
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
 
-class State(Base):
-    '''Class def for State'''
+class City(Base):
+    '''Class definition for a city'''
 
-    __tablename__ = 'states'
+    __tablename__ = 'cities'
     id = Column(Integer,
                 autoincrement=True,
                 unique=True,
