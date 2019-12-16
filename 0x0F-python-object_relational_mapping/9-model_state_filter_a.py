@@ -20,7 +20,4 @@ if __name__ == "__main__":
         if 'a' in str(state):
             print("{}: {}".format(state.id, state.name))
 
-    else:
-        print("Nothing")
-
     session.close()
