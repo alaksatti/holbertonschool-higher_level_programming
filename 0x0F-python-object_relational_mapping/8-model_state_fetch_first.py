@@ -14,9 +14,9 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
 
     session = sessionmaker(bind=engine)()
-    lists = session.query(State).first()
+    state = session.query(State).first()
 
-    if lists:
+    if state:
       print("{}: {}".format(state.id, state.name))
 
 
