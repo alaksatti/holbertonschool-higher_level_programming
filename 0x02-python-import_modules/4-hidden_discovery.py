@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
+if __name__ == '__main__':
     import hidden_4
-    for n in dir(hidden_4):
-        if not n.startswith('__'):
-            print(n)
+    attr = dir(hidden_4)
+    for i in attr:
+        if i.startswith('__'):
+            continue
+        print(i)
