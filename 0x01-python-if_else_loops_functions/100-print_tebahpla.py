@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 for i in reversed(range(ord('a'), ord('z') + 1)):
     if i % 2 != 0:
-        print(chr(i - 32), end='')
+        off = -32
     else:
-        print(chr(i), end='')
+        off = 0
+        
+    print(chr(i + off), end='')
