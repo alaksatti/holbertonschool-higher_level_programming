@@ -6,7 +6,7 @@ if number < 0:
     LD = -1 * (n_number % 10)
 else:
     LD = number % 10
-    
+
 print("Last digit of " + str(number) + " is " + str(LD), end=" ")
 if LD > 5:
     print("and is greater than 5")
