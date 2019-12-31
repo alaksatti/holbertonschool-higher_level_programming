@@ -8,4 +8,3 @@ elif number < 0:
     print(str(number) + " is negative")
 else:
     print(str(number) + " is zero")
-    
