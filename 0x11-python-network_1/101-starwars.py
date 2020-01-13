@@ -15,7 +15,7 @@ if __name__ == "__main__":
             print(user['name'])
         tr = r.json()
         while (tr['next']):
-            tr = get(r.json()['next']).json()
+            tr = get(tr['next']).json()
             for user in tr['results']:
                 print(user['name'])
     else:
