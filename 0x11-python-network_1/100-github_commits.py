@@ -12,7 +12,8 @@ from requests import get
 from sys import argv
 
 if __name__ == "__main__":
-    c = get('https://api.github.com/repos/' + argv[2] + '/' + argv[1] + '/commits')
+    c = get('https://api.github.com/repos/' + argv[2] +
+            '/' + argv[1] + '/commits')
     if c.json():
         c_num = 0
         for commits in c.json():
@@ -24,4 +25,3 @@ if __name__ == "__main__":
 
     else:
         print("Not a valid JSON")
-                
