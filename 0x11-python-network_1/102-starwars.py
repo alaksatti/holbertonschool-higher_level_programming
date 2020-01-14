@@ -10,14 +10,18 @@ from sys import argv
 
 if __name__ == "__main__":
     r = get('https://swapi.co/api/people', params={'search': argv[1]})
-    results = r.json().get('results')
 
-    print("Number of results: {}".format(r.json().get('count')))
-    tr = r.json()
-    while(tr.get('next')):
-        tr = get(tr.get('next')).json()
-        results += tr.get('results')
-    for e in results:
-        print(e.get('name'))
-        for film in e.get('films'):
-            print("\t{}".format(get(film).json().get('title')))
+    if r.json():
+        results = r.json().get('results')
+
+        print("Number of results: {}".format(r.json().get('count')))
+        tr = r.json()
+        while(tr.get('next')):
+            tr = get(tr.get('next')).json()
+            results += tr.get('results')
+        for e in results:
+            print(e.get('name'))
+            for film in e.get('films'):
+                print("\t{}".format(get(film).json().get('title')))
+    else:
+        print("Not a valid JSON")        
