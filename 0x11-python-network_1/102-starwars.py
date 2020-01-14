@@ -15,8 +15,10 @@ if __name__ == "__main__":
     print("Number of results: {}".format(r.json().get('count')))
 
     tr = r.json()
-    while(tr.get('next')):
-        tr = get(tr.get('next')).json()
+
+    
+    while(tr['next']):
+        tr = get(tr['next']).json()
         res += tr.get('results')
     for e in res:
         print(e.get('name'))
