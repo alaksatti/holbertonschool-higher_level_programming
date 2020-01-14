@@ -10,9 +10,6 @@ from sys import argv
 
 if __name__ == "__main__":
     r = get('https://swapi.co/api/people', params={'search': argv[1]})
-    if r.json() is None:
-        print("Not a valid JSON")
-
     results = r.json().get('results')
 
     print("Number of results: {}".format(r.json().get('count')))
