@@ -1,4 +1,4 @@
 #!/usr/bin/node
-// lol
+// print Javascript is amazing
 const something = 'Javascript is amazing';
 console.log(something);
