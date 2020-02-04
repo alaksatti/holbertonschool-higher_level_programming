@@ -2,7 +2,7 @@
 // checks if first arg can be converted to int and prints it
 let num = parseInt(process.argv[2]);
 if (num) {
-  console.log('My number: ' + number);
+  console.log('My number: ' + num);
 } else {
   console.log('Not a number');
 }
