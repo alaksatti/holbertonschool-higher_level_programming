@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // script that computes and prints factorial
-let myObject = {
+const myObject = {
   type: 'object',
   value: 12
 };
