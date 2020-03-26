@@ -94,4 +94,4 @@ What you should learn from this project:
 ---
 
 ## Author
-* **Ryuichi Miyazaki** - [alaksatti](https://github.com/alaksatti)
+* **Aalaa Satti** - [alaksatti](https://github.com/alaksatti)
