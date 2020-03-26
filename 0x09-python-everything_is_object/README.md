@@ -169,14 +169,16 @@ Answer with Yes or No.
 
 
 ### [32. int 1/3](./104-line1.txt)
+```
 * julien@ubuntu:/python3$ cat int.py
 a = 1
 b = 1
 julien@ubuntu:/python3$
-
+```
 
 
 ### [33. int 2/3](./105-line1.txt)
+```
 * julien@ubuntu:/python3$ cat int.py
 a = 1024
 b = 1024
@@ -184,17 +186,18 @@ del a
 del b
 c = 1024
 julien@ubuntu:/python3$
-
+```
 
 
 ### [34. int 3/3](./106-line1.txt)
+```
 * julien@twix:/tmp/so$ cat int.py
 print("I")
 print("Love")
 print("Python")
 julien@ubuntu:/tmp/so$
 
-
+```
 
 ---
 
