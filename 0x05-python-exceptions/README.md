@@ -1,18 +1,5 @@
 # 0x05. Python - Exceptions
 
-## Description
-What you should learn from this project:
-
-* Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
-* What’s the difference between errors and exceptions
-* What are exceptions and how to use them
-* When do we need to use exceptions
-* How to correctly handle an exception
-* What’s the purpose of catching exceptions
-* How to raise a builtin exception
-* When do we need to implement a clean-up action after an exception
-
----
 
 ### [0. Safe list printing](./0-safe_print_list.py)
 * Write a function that prints x elements of a list.
