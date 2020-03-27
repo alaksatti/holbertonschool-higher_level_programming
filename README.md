@@ -1,8 +1,8 @@
 # holbertonschool-higher_level_programming
 
-### [0x00-python-hello_world](/.0x00-python-hello_world)
+### [0x00-python-hello_world](0x00-python-hello_world)
 
-### [0x01-python-if_else_loops_functions](./0x01-python-if_else_loops_functions)
+### [0x01-python-if_else_loops_functions](0x01-python-if_else_loops_functions)
 
 ### [2. Hello, print](./2-print.py)
 * Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
