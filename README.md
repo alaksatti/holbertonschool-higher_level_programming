@@ -4,52 +4,43 @@
 
 ### [0x01-python-if_else_loops_functions](0x01-python-if_else_loops_functions)
 
-### [2. Hello, print](./2-print.py)
-* Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+### [0x02-python-import_modules](0x02-python-import_modules)
 
+### [0x03-python-data_structures](0x03-python-data_structures)
 
-### [3. Print integer](./3-print_number.py)
-* Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
+### [0x04-python-more_data_structures](0x04-python-more_data_structures)
 
+### [0x05-python-exceptions](0x05-python-exceptions)
 
-### [4. Print float](./4-print_float.py)
-* Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
+### [0x06-python-classes](0x06-python-classes)
 
+### [0x07-python-test_driven_development](.0x07-python-test_driven_development)
 
-### [5. Print string](./5-print_string.py)
-* Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
+### [0x08-python-more_classes](0x08-python-more_classes)
 
+### [0x09-python-everything_is_object](0x09-python-everything_is_object)
 
-### [6. Play with strings](./6-concat.py)
-* Complete this source code to print Welcome to Holberton School!
+### [0x0A-python-inheritance](0x0A-python-inheritance)
 
+### [0x0B-python-input_output](0x0B-python-input_output)
 
-### [7. Copy - Cut - Paste](./7-edges.py)
-* Complete this source code
+### [0x0C-python-almost_a_circle](0x0C-python-almost_a_circle)
 
+### [0x0D-SQL_introduction](0x0D-SQL_introduction)
 
-### [8. Create a new sentence](./8-concat_edges.py)
-* Complete this source code to print object-oriented programming with Python, followed by a new line.
+### [0x0E-SQL_more_queries](0x0E-SQL_more_queries)
 
+### [0x0F-python-object_relational_mapping](0x0F-python-object_relational_mapping)
 
-### [9. Easter Egg](./9-easter_egg.py)
-* Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
+### [0x11-python-network_1](0x11-python-network_1)
 
+### [0x12-javascript-warm_up](0x12-javascript-warm_up)
 
-### [10. Linked list cycle](./10-check_cycle.c)
-* Technical interview preparation:
+### [0x13-javascript_objects_scopes_closures](0x13-javascript_objects_scopes_closures)
 
+### [0x14-javascript-web_scraping](0x14-javascript-web_scraping)
 
-### [11. Hello, write](./100-write.py)
-* Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
-
-
-### [12. Compile](./101-compile)
-* Write a script that compiles a Python script file.
-
-
-### [13. ByteCode -> Python #1](./102-magic_calculation.py)
-* Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
+### [0x15-javascript-web_jquery](0x15-javascript-web_jquery)
 
 ---
 
